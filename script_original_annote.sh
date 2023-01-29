@@ -4,7 +4,7 @@
 
 nomUser=$1
 reponse='' # La variable ne sert jamais
-codret=0
+codret=0 # codret --> coderet
 
 while [[ -z "$reponse" ]] # Boucle infinie
 do
