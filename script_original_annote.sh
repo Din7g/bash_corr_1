@@ -22,7 +22,7 @@ do
         # rep=$(cat /etc/passwd | grep -E "^${nomUser}:")
         if [[ -n "$rep" ]]
         then
-            echo "nom     :" $("$rep | cut -d ':' -f 1")
+            echo "nom     :" $("$rep | cut -d ':' -f 1") # echo "nom     : "$(echo "$rep" | cut -d ':' -f 1)
             echo "password:" $("$rep | cut -d ':' -f 1") # -f 2
             echo "userId  :" $("$rep | cut -d ':' -f 1") # -f 3
             echo "groupId :" $("$rep | cut -d ':' -f 1") # -f 4
